@@ -1,0 +1,337 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoPe DreaM Poornima</title>
+
+    <link rel="stylesheet" href="https://style.css.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="video()">
+
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>POORNIMA</span>NAPKIN_STORE</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#Product">Product</a>
+           
+            <a href="review_custemer.html">Review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+            <a>If you Log In and shop from here more than three times in a month,you get 12% refund.</a>
+        </form>
+
+    </div>
+
+    <!-- home section starts  -->
+
+
+    <section class="home" id="home">
+        <div class="content">
+            <P>LEARN MORE ON</P>
+            <h1>HoPe every Smily face</h1>
+    
+            <a href="#" class="btn">READ MORE</a>
+        </div>
+        <div class="video">
+            <img src="C:\Users\lokes\Desktop\Files\program\images (1).JPG" id="slideimg">
+        </div>
+        
+    </section>
+   
+   <script>
+    var slideimg = document.getElementById("slideimg");
+
+    var images = new Array(
+        "C:\Users\lokes\Desktop\Files\program\images (1).jpg",
+        "C:\Users\lokes\Desktop\Files\program\download (3).jpg",
+        "C:\Users\lokes\Desktop\Files\program\download (2).jpg",
+        "C:\Users\lokes\Desktop\Files\program\download (1).jpg"
+    );
+
+    var len = images.length;
+    var i = 0;
+
+    function video() {
+        if (i > len - 1) {
+            i = 0;
+        }
+        slideimg.src = images[i];
+        i++;
+        setTimeout('video()', 2000);
+    }
+</script>
+    
+    <!-- home section ends -->
+    <!-- Product section starts  -->
+
+    <section class="Product" id="Product">
+
+        <h1 class="heading">
+            <span>PRODUCT</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="C:\Users\lokes\Desktop\Files\program\download (3).jpg" alt="">
+                <div class="content">
+                    <h3> SOFI </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.20.00 <span>Rs.35.00</span> </div>
+                    <a href="#" class="btn">buy now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="C:\Users\lokes\Desktop\Files\program\download (2).jpg" alt="">
+                <div class="content">
+                    <h3> STAR FREE </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.30.00 <span>Rs.40.00</span> </div>
+                    <a href="#" class="btn">buy now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="C:\Users\lokes\Desktop\Files\program\download (1).jpg" alt="">
+                <div class="content">
+                    <h3> PAREE </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.9.00 <span>Rs.20.00</span> </div>
+                    <a href="#" class="btn">buy now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="C:\Users\lokes\Desktop\Files\program\download.jpg" alt="">
+                <div class="content">
+                    <h3> STAY_FREE </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.30.00 <span>Rs.60.00</span> </div>
+                    <a href="#" class="btn">buy now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="C:\Users\lokes\Desktop\Files\program\images.jpg" alt="">
+                <div class="content">
+                    <h3> WHISHPER </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.100.00 <span>Rs.120.00</span> </div>
+                    <a href="#" class="btn">buy now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="C:\Users\lokes\Desktop\Files\program\images (2).jpg" alt="">
+                <div class="content">
+                    <h3> CARE_FREE </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.60.00 <span>Rs.100.00</span> </div>
+                    <a href="#" class="btn">buy now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Product section ends -->
+   <!-- review section starts  -->
+
+ 
+    <section class="review">
+        
+    
+
+
+    <h1 class="heading">
+        <span>REVIEW</span>
+
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="C:\Users\lokes\Desktop\Files\program\images (3).jpg" alt="">
+                    <h3>POOJA MEENA</h3>
+                    <p>Product was awesome I really impressed with delivery services. Packing was also good! This shopping app provide me good discount and good cashback in paytm wallet. You can use this app this shopping app is very secure.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="C:\Users\lokes\Desktop\Files\program\download (7).jpg" alt="">
+                    <h3>RUPALI KHANDELWAL</h3>
+                    <p>You can use this app this shopping app is very secure.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="C:\Users\lokes\Desktop\Files\program\download (6).jpg" alt="">
+                    <h3>PRASHANA FOGAD</h3>
+                    <p>This shopping app provide me good discount and good cashback in paytm wallet. You can use this app this shopping app is very secure.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">
+        <span>CONTACT</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images (1).jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+<!-- footer section  -->
+
+<footer>
+    <div class="center">
+        <p>Jaipur, India | Email:2021pceeclokesh009@poornima.org</p>
+        <P>copyright &copy; 2023 Sanitary_napkin_vending-machine</P>
+    </div>
+</footer>
+<script src="https://script.js.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+</body>
+</html>

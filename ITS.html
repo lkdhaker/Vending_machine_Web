@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sanitary Napkin Vending Machine</title>
+  <style>
+    /* CSS styles for the vending machine */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+    }
+    textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sanitary Napkin Vending Machine</h1>
+    <form id="vendingForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="text" id="email" required>
+      
+      <label for="napkinQuantity">Napkin Quantity:</label>
+      <input type="number" id="napkinQuantity" required>
+      
+      <button type="submit">Buy Napkins</button>
+    </form>
+    <div id="response"></div>
+  </div>
+
+  <script>
+    // JavaScript code for handling form submission and sending data
+    const vendingForm = document.getElementById('vendingForm');
+    const responseDiv = document.getElementById('response');
+
+    vendingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const napkinQuantity = document.getElementById('napkinQuantity').value;
+
+      // Store customer data (you can use localStorage or send it to a server)
+      const customerData = {
+        name: name,
+        email: email,
+        napkinQuantity: napkinQuantity
+      };
+      localStorage.setItem('customerData', JSON.stringify(customerData));
+
+      // Send information about the stock of napkins in the machine (you can use AJAX or fetch to send it to a server)
+      const stockData = {
+        machineId: '123', // Replace with your machine's ID
+        stock: 100 // Replace with the actual stock count
+      };
+      // Send the stockData to the server or perform necessary actions
+
+      // Provide online location to the customer (you can display a map or provide a link)
+      const onlineLocation = '<a href="26.html">Best Suggestion</a>';
+      responseDiv.innerHTML = `Best Napkins are available!<br>Near by: ${onlineLocation}</br>`;
+
+      // Clear the form
+      vendingForm.reset();
+    });
+  </script>
+</body>
+</html>
